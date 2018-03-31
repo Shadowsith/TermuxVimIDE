@@ -18,27 +18,26 @@ call plug#begin('~/.vim/bundle')
 Plug 'vim-syntastic/syntastic'
 Plug 'luochen1990/rainbow'
 Plug 'Shadowsith/vim-syntax'
-Plug 'vim-scripts/SingleCompile'
+"Plug 'vim-scripts/SingleCompile'
 
 "Mucomplete crashes with completor and javacomplete, so only plugs for other
 "filetypes
 if $ac != "c" || $ac != "cpp" || $ac != "c++" || $ac != "h" || $ac != "hpp" || $ac != "php" || $ac != "js" || $ac != "py"
     Plug 'lifepillar/vim-mucomplete' 
 endif
-Plug 'lifepillar/pgsql.vim'
-Plug 'lifepillar/vim-cheat40'
+"Plug 'lifepillar/pgsql.vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 Plug 'maralla/completor.vim', { 'for': ['cpp', 'c', 'php', 'js', 'py'] }
-Plug 'scrooloose/nerdtree'
-Plug 'jistr/vim-nerdtree-tabs'
+"Plug 'scrooloose/nerdtree'
+"Plug 'jistr/vim-nerdtree-tabs'
 Plug 'xolox/vim-lua-ftplugin', { 'for': 'lua' } "lua autocompletion
 Plug 'xolox/vim-misc' "needed for lua-autocompletion
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
-Plug 'majutsushi/tagbar'
-Plug 'Xuyuanp/nerdtree-git-plugin'
+"Plug 'majutsushi/tagbar'
+"Plug 'Xuyuanp/nerdtree-git-plugin'
 Plug 'Yggdroot/indentLine'
-Plug 'jason0x43/vim-js-indent'
+"Plug 'jason0x43/vim-js-indent'
 Plug 'nanotech/jellybeans.vim'
 Plug 'shawncplus/phpcomplete.vim'
 Plug 'ternjs/tern_for_vim'
@@ -51,14 +50,14 @@ Plug 'vimwiki/vimwiki'
 Plug 'ap/vim-css-color'
 Plug 'MattesGroeger/vim-bookmarks'
 Plug 'jiangmiao/auto-pairs' 
-Plug 'alvan/vim-closetag'
-Plug 'maksimr/vim-jsbeautify'
-Plug 'lervag/vimtex'
+"Plug 'alvan/vim-closetag'
+"Plug 'maksimr/vim-jsbeautify'
+"Plug 'lervag/vimtex'
 Plug 'xolox/vim-notes'
 Plug 'Shougo/denite.nvim'
 Plug 'terryma/vim-expand-region'
 Plug '~/.vim/bundle/Conque-GDB'
-Plug 'vim-vdebug/vdebug', {'for' : ['py', 'php'] }
+"Plug 'vim-vdebug/vdebug', {'for' : ['py', 'php'] }
 call plug#end()
 call plug#helptags() 
 
