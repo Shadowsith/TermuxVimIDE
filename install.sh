@@ -11,6 +11,7 @@ do
         then
             rm -f ~/.vimrc
             rm -rf ~/.vim/
+            mkdir ~/.vim/
             echo The old vim files have been deleted!
             break
     fi 
@@ -23,8 +24,12 @@ do
             echo "Do you want to delete old vim-files? [y/n]"
     fi
 done
-echo Copy TermuxVimIDE to ~/.vim/ 
-cp -r ../TermuxVimIDE ~/.vim/
+echo Copying TermuxVimIDE to ~/.vim/ 
+cp -r ./* ~/.vim/
+echo Copying .vimrc to ~/.vimrc
+cp -f ./.vimrc ~/.vimrc 
+echo Copying .tern-config to ~/.tern-config 
+cp -f ./.tern-config ~/.tern-config 
 echo Installing finished! 
 
 
